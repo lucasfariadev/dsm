@@ -21,6 +21,31 @@ header {
     background-color: antiquewhite;
 }
 
+header .logoDsm img{
+    width:  60px;
+    margin-top: 5%;
+    margin-left: 4%;
+}
+
+
+header ul{
+    list-style: none ;
+}
+
+
+header ul li img{
+    width: 30px;
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+
+header ul li img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-filter: drop-shadow(5px 2px 1px rgba(0,0,0,.5));
+}
+
 main {
     display: flex;
     padding: 5%;
@@ -31,16 +56,33 @@ main {
 }
 
 section{
+    
+    display: flex;
     justify-content: center;
     align-items: center; 
     width: 350px;
     height: 250px;
     border: 1px solid black;
-    margin-right: 5%;
+    margin-right: 2%;
     margin-bottom: 5%;
     transition: 1sz;
     border-radius: 10%;
+    padding: 10px;
+
+    transition: all 0.5s;
+    cursor: pointer;
     
+}
+
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .icon img{
+    width: 60px;
 }
 
 .algoritmos{
@@ -49,7 +91,17 @@ section{
 
 
 section:hover{
-    background-color: rgb(26, 146, 106);
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    background-color: rgb(111, 252, 205);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+
+}
+
+section img:hover{
+
+    opacity: 0.5;
 }
 
 .logoDsm {
@@ -67,5 +119,5 @@ header ul li {
 
 main {
     display: flex;
-    background-color: aquamarine;
+    background-color: rgb(91, 135, 255);
 }
