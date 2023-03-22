@@ -11,23 +11,27 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    color: #434343;
+    color: #363333;
 }
 
 header {
     display: flex;
-    background-color: antiquewhite;
-    height: 6%;
+    background-color: #FFB100;
+    align-items: center;
+    height: 8%;
+
 }
 
 header .logoDsm img {
-    width: 70px;
+    width: 50px;
     margin-top: 5%;
     margin-left: 7%;
     margin-bottom: 0;
 }
 
 header ul {
+    display: flex;
+    align-items: center;
     list-style: none;
     margin-bottom: 0;
 }
@@ -74,15 +78,16 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    width: 350px;
     height: 350px;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 14, 15);
     transition: 1s;
     border-radius: 10%;
     padding: 10px;
     transition: all 0.5s;
     cursor: pointer;
     margin-bottom: 5%;
+    background-color: rgb(144, 194, 231);
 }
 
 .conteudo {
@@ -101,7 +106,7 @@ section {
 
 section:hover {
     -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
-    background-color: rgba(69, 117, 250, 0.6);
+    background-color: rgba(144, 194, 231, 0.6);
     font-size: 2.5vh;
     color: black;
     -webkit-transform: scale(1.1);
@@ -133,17 +138,18 @@ header ul li {
 
 main {
     display: flex;
-    background-color: rgb(91, 135, 255);
+    background-color: antiquewhite;
+    text-align: center;
 }
 
 footer {
     display: flex;
-    background-color: #434343;
+    background-color: black;
     color: #F6F9FF;
     justify-content: center;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:720px) {
     header .logoDsm img {
         width: 50px;
         margin-right: 0%;
