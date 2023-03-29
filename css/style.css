@@ -129,7 +129,6 @@ section.algoritmos{
 section.redes{
     background-color: rgba(233, 216, 59, 0.4);
     background-image: url(../imgs/disc/redes.jpg.crdownload);
-  
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
     background-repeat: no-repeat;
     background-position: center;
@@ -140,7 +139,6 @@ section.design{
     background-image: url(../imgs/disc/design.png);
     background-repeat: no-repeat;
     background-position: center;
-
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
 }
 
@@ -200,9 +198,41 @@ header ul li {
 
 main {
     display: flex;
-    background-color: ##fff8dd ;
+    background-color: #fff8dd ;
     text-align: center;
 }
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.azul {
+    border-left: 3px solid #035ad4;
+}
+
+.amarelo {
+    border-left: 3px solid #f3ef09;
+}
+
+.verde {
+    border-left: 3px solid #3d9403;
+}
+
+.vermelho {
+    border-left: 3px solid #b3404a;
+}
+
+.roxo {
+    border-left: 3px solid purple;
+}
+
+
+
 
 footer {
     display: flex;
