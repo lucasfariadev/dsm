@@ -31,6 +31,8 @@ header ul {
     align-items: center;
     list-style: none;
     margin-bottom: 0;
+    margin-left: 1%;
+    
 }
 
 header ul li {
@@ -65,57 +67,73 @@ header ul li img:hover {
 main {
     margin-top: 0%;
     display: flex;
-    padding: 9%;
+    padding: 15%;
     padding-bottom: 0%;
     justify-content: space-between;
     flex-flow: wrap;
     margin-bottom: 0%;
+    max-height:500px ;
 
 }
 
 main.disciplinas{
-    padding-top: 5%;
+    padding-top: 2%;
+
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0;
+    
     
 }
 
-section {
+
+aside   {
+    margin: 2% ;
+    width: 40vh;
+    height: 100vh;
+    max-height:550px ;
+    background-color: #F09675;
+}
+
+a section {
     padding-top: 0%;
-    padding-right: 2%;
     margin-top: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 350px;
-    height: 350px;
+    width: 30vh;
+    height: 30vh;
     border: 1px solid rgb(0, 14, 15);
     transition: 1s;
     border-radius: 10%;
-    padding: 10px;
+
     transition: all 0.5s;
     cursor: pointer;
     margin-bottom: 5%;
-    color: white
-
-
+    color: white;
 
 }
+
 
 
 section.dataBase{
     
     background-image: url(../imgs/disc/istockphoto-1400292331-170667a.jpg);
-    background-image:  linear-gradient(to right, blue,  );
-    ;
-    
+    background-image:  linear-gradient(to right, blue,  );    
     background-repeat: no-repeat;
     background-position: center;
-
+    margin-right:10px; 
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
 }
 section.engSoftware{
     background-color: rgba(59, 233, 210, 0.4);
     background-image: url(../imgs/disc/eng.png);
-
+    margin-right:10px; 
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
     background-repeat: no-repeat;
     background-position: center;
@@ -123,7 +141,7 @@ section.engSoftware{
 section.algoritmos{
     background-color: rgba(192, 59, 233, 0.4);
     background-image: url(../imgs/disc/algoritm.jpg);
-
+  
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
     background-repeat: no-repeat;
     background-position: center;
@@ -142,6 +160,7 @@ section.redes{
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right:10px; 
 }
 
 section.design{
@@ -149,6 +168,7 @@ section.design{
     background-image: url(../imgs/disc/design.png);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right:10px; 
     text-shadow: 3px 2px 1px rgb(22, 20, 20);
 }
 
@@ -271,10 +291,11 @@ footer {
         margin-right: 0;
     }
 
-    section {
-        width: 47%;
-        height: 33%;
+    a section {
+        width: 30vh;
+        height: 18vh;
         align-items: center;
+
     }
 
     .icon img {
@@ -286,9 +307,13 @@ footer {
         font-size: 2vh;
         text-align: center;
     }
+    aside{
+        display: none;
+    }
 
-    main {
-        height: 91vh;
+
+    section.algoritmos{
+        margin-right: 10px;
     }
 
     .disciplinas:nth-child(5) {
